@@ -8,6 +8,7 @@
 	<ItemGroup>
 		<Compile Include="**/*.shared.cs" />
 		<Compile Include="**/*.shared.*.cs" />
+		<Compile Remove="Components\QMUIButton.shared.cs" />
 		<PackageReference Include="Xamarin.Forms" Version="5.0.0.1931" />
 	</ItemGroup>
 	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
