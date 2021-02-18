@@ -1,0 +1,31 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras/2.1.2">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;Xamarin.iOS10;MonoAndroid10.0;</TargetFrameworks>
+		<RootNamespace>QMUI.Forms</RootNamespace>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="**/*.shared.cs" />
+		<Compile Include="**/*.shared.*.cs" />
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.1931" />
+	</ItemGroup>
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+		<Compile Include="**\*.android.cs" />
+		<Compile Include="**\*.android.*.cs" />
+		<ProjectReference Include="..\QMUI.Droid\QMUI.Droid.csproj" />
+		<!--Resources-->
+		<AndroidResource Include="Resources\**\*.axml" />
+		<AndroidResource Include="Resources\**\*.xml" />
+		<AndroidResource Include="Resources\**\*.png" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) ">
+		<Compile Include="**\*.ios.cs" />
+		<Compile Include="**\*.ios.*.cs" />
+		<ProjectReference Include="..\QMUI.iOS\QMUI.iOS.csproj" />
+	</ItemGroup>
+
+
+
+</Project>

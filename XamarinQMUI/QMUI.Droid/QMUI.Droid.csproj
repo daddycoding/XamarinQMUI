@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C223B6C-C3CB-4DEC-A04E-BFCC5896CC3B}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QMUI.Droid</RootNamespace>
+    <AssemblyName>QMUI.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<JavaDocPaths>javadoc</JavaDocPaths>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+	<JavaDocPaths>javadoc</JavaDocPaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additions\AboutAdditions.txt" />
+    <LibraryProjectZip Include="Jars\qmui-2.0.0-alpha11.aar" />
+    <None Include="javadoc\package-list" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="javadoc\allclasses-frame.html" />
+    <Content Include="javadoc\allclasses-noframe.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaButton.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaConstraintLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaFrameLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaImageButton.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaLinearLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaRelativeLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaTextView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaViewHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\alpha\QMUIAlphaViewInf.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\Beta.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\IQMUILayout.HideRadiusSide.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\IQMUILayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIButton.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIConstraintLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIFrameLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUILayoutHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUILinearLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIPriorityLinearLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIPriorityLinearLayout.LayoutParams.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\layout\QMUIRelativeLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\ITouchableSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkify.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkify.MatchFilter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkify.TransformFilter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkify.WebUrlMatcher.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkTouchDecorHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUILinkTouchMovementMethod.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\link\QMUIScrollingMovementMethod.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\IQMUIContinuousNestedBottomView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\IQMUIContinuousNestedScrollCommon.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\IQMUIContinuousNestedScrollCommon.OnScrollNotifier.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\IQMUIContinuousNestedTopView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedBottomAreaBehavior.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedBottomDelegateLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedBottomRecyclerView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedScrollLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedScrollLayout.OnScrollListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopAreaBehavior.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopAreaBehavior.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopDelegateLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopLinearLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopRecyclerView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIContinuousNestedTopWebView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIDraggableScrollBar.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\nestedScroll\QMUIViewOffsetBehavior.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\QMUIConfig.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\QMUIInterpolatorStaticHolder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\QMUILog.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\QMUILog.QMUILogDelegate.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\IQMUIQQFaceManager.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUINoQQFaceManager.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceCompiler.Element.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceCompiler.ElementList.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceCompiler.ElementType.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceCompiler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceView.PressCancelAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QMUIQQFaceView.QQFaceViewListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\qqface\QQFace.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUIRVDraggableScrollBar.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUIRVDraggableScrollBar.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUIRVItemSwipeAction.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUIRVItemSwipeAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUISwipeAction.ActionBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUISwipeAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\recyclerView\QMUISwipeViewHolder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\annotation\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\annotation\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\annotation\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\annotation\QMUISkinChangeNotAdapted.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\annotation\QMUISkinListenWithHierarchyChange.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\defaultAttr\IQMUISkinDefaultAttrProvider.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\defaultAttr\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\defaultAttr\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\defaultAttr\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\defaultAttr\QMUISkinSimpleDefaultAttrProvider.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\IQMUISkinRuleHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleAlphaHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleBackgroundHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleBgTintColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleBorderHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleColorStateListHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleDrawableHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleFloatHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleHintColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleMoreBgColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleMoreTextColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleProgressColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleSeparatorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleSrcHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleTextColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleTextCompoundSrcHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleTextCompoundTintColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleTintColorHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\handler\QMUISkinRuleUnderlineHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\IQMUISkinApplyListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\IQMUISkinDispatchInterceptor.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\IQMUISkinHandlerDecoration.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\IQMUISkinHandlerSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\IQMUISkinHandlerView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinLayoutInflaterFactory.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinManager.DispatchListenStrategy.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinManager.DispatchListenStrategySelector.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinManager.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinManager.OnSkinChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\QMUISkinValueBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\skin\SkinWriter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUIAlignMiddleImageSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUIBlockSpaceSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUICustomTypefaceSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUIMarginImageSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUIOnSpanClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUITextSizeSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\span\QMUITouchableSpan.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\DoNotInterceptKeyboardInset.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\InterceptNotchInsetDispatch.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIActivityLifecycleCallbacks.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUICollapsingTextHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIColorHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIDeviceHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIDirection.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIDisplayHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIDrawableHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIKeyboardHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIKeyboardHelper.KeyboardVisibilityEventListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUILangHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUINotchHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIPackageHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIReflectHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIResHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUISpanHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIStatusBarHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIToastHelper.FixCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIToastHelper.FixRunnable.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIToastHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIViewHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIViewOffsetHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIWindowHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\util\QMUIWindowInsetHelper.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBaseDialog.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomGridSheetBuilder.DefaultItemViewFactory.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomGridSheetBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomGridSheetBuilder.ItemViewFactory.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomGridSheetBuilder.OnSheetItemClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomGridSheetBuilder.Style.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomListSheetBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.BottomListSheetBuilder.OnSheetItemClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheet.OnBottomSheetShowListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetBaseBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetBehavior.DownDragDecisionMaker.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetBehavior.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetGridItemModel.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetGridItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetGridLineLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetGridLineLayout.ItemWidthCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListAdapter.OnItemClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListAdapter.VH.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListItemDecoration.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListItemModel.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetListItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIBottomSheetRootLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.AutoResizeDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.CheckableDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.CheckBoxMessageDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.CustomDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.EditTextDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.MenuBaseDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.MenuBaseDialogBuilder.ItemViewFactory.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.MenuDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.MessageDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialog.MultiCheckableDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogAction.ActionListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogAction.Prop.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogBlockBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogBuilder.OnProvideDefaultTheme.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogBuilder.Orientation.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogMenuItemView.CheckItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogMenuItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogMenuItemView.MarkItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogMenuItemView.MenuItemViewListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogMenuItemView.TextItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogRootLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUIDialogView.OnDecorationListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUITipDialog.Builder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUITipDialog.Builder.IconType.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUITipDialog.CustomBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUITipDialog.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\dialog\QMUITipDialogView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.LayoutParamConfig.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.QMUICommonListItemAccessoryType.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.QMUICommonListItemOrientation.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.QMUICommonListItemTipPosition.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUICommonListItemView.SkinConfig.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUIGroupListSectionHeaderFooterView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUIGroupListView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\grouplist\QMUIGroupListView.Section.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\IBlankTouchDetector.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\INotchInsetConsumer.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\IWindowInsetKeyboardConsumer.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\IWindowInsetLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIBasePopup.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIFullScreenPopup.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIFullScreenPopup.KeyboardPercentOffsetListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIFullScreenPopup.OnBlankClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIFullScreenPopup.OnKeyBoardListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUINormalPopup.Direction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUINormalPopup.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIPopup.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIPopups.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIQuickAction.Action.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIQuickAction.DefaultItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIQuickAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIQuickAction.ItemView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\popup\QMUIQuickAction.OnClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIAlwaysFollowOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUICenterOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIFixToTargetOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.ActionListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.ActionPullWatcherView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.ActionViewOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.DefaultStopTargetViewFlingImpl.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.LayoutParams.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.PullAction.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.PullActionBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.PullEdge.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLayout.StopTargetViewFlingImpl.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullLoadMoreView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullLayout\QMUIPullRefreshView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUICenterGravityRefreshOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIDefaultRefreshOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIFollowRefreshOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.IRefreshView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.OnChildScrollUpCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.OnPullListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.RefreshOffsetCalculator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\pullRefreshLayout\QMUIPullRefreshLayout.RefreshView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIAnimationListView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIAnimationListView.Manipulator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIAppBarLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUICollapsingTopBarLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUICollapsingTopBarLayout.LayoutParams.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUICollapsingTopBarLayout.OnOffsetUpdateListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIEmptyView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIFloatLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIFloatLayout.OnLineCountChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIFontFitTextView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIItemViewsAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUILoadingView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUINotchConsumeLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIObservableScrollView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIObservableScrollView.OnScrollChangedListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIPagerAdapter.Action.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIPagerAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIProgressBar.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIProgressBar.OnProgressChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIProgressBar.QMUIProgressBarTextGenerator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIRadiusImageView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIRadiusImageView2.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISeekBar.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISlider.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISlider.DefaultCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISlider.DefaultThumbView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISlider.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUISlider.IThumbView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUITopBar.Action.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUITopBar.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUITopBarLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIVerticalTextView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIViewPager.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIWindowInsetLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIWindowInsetLayout2.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIWrapContentListView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\QMUIWrapContentScrollView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\QMUIRoundButton.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\QMUIRoundButtonDrawable.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\QMUIRoundFrameLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\QMUIRoundLinearLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\roundwidget\QMUIRoundRelativeLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIDefaultStickySectionAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUISection.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUISection.Model.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUISectionDiffCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUISectionDiffCallback.IndexGenerationInfo.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionAdapter.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionAdapter.PositionFinder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionAdapter.ViewCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionAdapter.ViewHolder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionItemDecoration.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionItemDecoration.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionLayout.DrawDecoration.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionLayout.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\section\QMUIStickySectionLayout.StickySectionWrapViewConfig.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUIBasicTabSegment.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUIBasicTabSegment.Mode.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUIBasicTabSegment.OnTabClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUIBasicTabSegment.OnTabSelectedListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUIBasicTabSegment.TabBuilderUpdater.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITab.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITab.IconPosition.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabAdapter.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabBuilder.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabIcon.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabIndicator.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment.OnTabClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment.OnTabSelectedListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment.TabLayoutOnPageChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment2.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabSegment2.TabLayoutOnPageChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabView.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\tab\QMUITabView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\ISpanTouchFix.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\QMUILinkTextView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\QMUILinkTextView.OnLinkClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\QMUILinkTextView.OnLinkLongClickListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\textview\QMUISpanTouchFixTextView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\package-frame.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\package-summary.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\package-tree.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIBridgeWebViewClient.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebView.Callback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebView.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebView.OnScrollChangeListener.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebViewBridgeHandler.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebViewBridgeHandler.MessageFinishCallback.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebViewClient.html" />
+    <Content Include="javadoc\com\qmuiteam\qmui\widget\webview\QMUIWebViewContainer.html" />
+    <Content Include="javadoc\constant-values.html" />
+    <Content Include="javadoc\deprecated-list.html" />
+    <Content Include="javadoc\help-doc.html" />
+    <Content Include="javadoc\index-all.html" />
+    <Content Include="javadoc\index.html" />
+    <Content Include="javadoc\overview-frame.html" />
+    <Content Include="javadoc\overview-summary.html" />
+    <Content Include="javadoc\overview-tree.html" />
+    <Content Include="javadoc\script.js" />
+    <Content Include="javadoc\stylesheet.css" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
