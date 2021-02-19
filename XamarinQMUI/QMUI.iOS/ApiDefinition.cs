@@ -5384,7 +5384,8 @@ namespace QMUI.iOS
         UIImage PauseButtonImage { get; set; }
     }
 
-    interface IQMUIZoomImageViewDelegate { 
+    interface IQMUIZoomImageViewDelegate
+    {
     }
 
     // @protocol QMUIImagePreviewViewDelegate <QMUIZoomImageViewDelegate>
@@ -5547,7 +5548,8 @@ namespace QMUI.iOS
         void ImagePickerPreviewViewController(QMUIImagePickerPreviewViewController imagePickerPreviewViewController, nint index);
     }
 
-    interface IQMUIImagePreviewViewDelegate { 
+    interface IQMUIImagePreviewViewDelegate
+    {
     }
 
     // @interface QMUIImagePickerPreviewViewController : QMUIImagePreviewViewController <QMUIImagePreviewViewDelegate>
@@ -5911,12 +5913,12 @@ namespace QMUI.iOS
     {
         // -(BOOL)requestToStartAnimation;
         [Export("requestToStartAnimation")]
-        [Verify(MethodToProperty)]
+        //   [Verify(MethodToProperty)]
         bool RequestToStartAnimation { get; }
 
         // -(BOOL)requestToStopAnimation;
         [Export("requestToStopAnimation")]
-        [Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         bool RequestToStopAnimation { get; }
     }
 
@@ -6762,7 +6764,7 @@ namespace QMUI.iOS
 
         // -(BOOL)isShowing;
         [Export("isShowing")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         bool IsShowing { get; }
 
         // @property (copy, nonatomic) void (^willShowBlock)(BOOL);
@@ -7012,7 +7014,7 @@ namespace QMUI.iOS
 
         // -(BOOL)shouldHideSearchBarWhenEmptyViewShowing;
         [Export("shouldHideSearchBarWhenEmptyViewShowing")]
-        [Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         bool ShouldHideSearchBarWhenEmptyViewShowing { get; }
 
         // -(void)initSearchController;
@@ -7986,13 +7988,13 @@ namespace QMUI.iOS
         // @required -(BOOL)isShowing;
         [Abstract]
         [Export("isShowing")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         bool IsShowing { get; }
 
         // @required -(BOOL)isAnimating;
         [Abstract]
         [Export("isAnimating")]
-        [Verify(MethodToProperty)]
+        //    [Verify(MethodToProperty)]
         bool IsAnimating { get; }
     }
 
@@ -8145,7 +8147,7 @@ namespace QMUI.iOS
         [Export("windowDidTransitionToSize:")]
         void WindowDidTransitionToSize(CGSize size);
     }
- 
+
     //// @interface QMUIWindowSizeMonitor (UIResponder) <QMUIWindowSizeMonitorProtocol>
     //[Category]
     //[BaseType(typeof(UIResponder))]
@@ -8273,12 +8275,12 @@ namespace QMUI.iOS
 
         // -(NSArray<NSIndexPath *> *)qmui_indexPathsForVisibleItems;
         [Export("qmui_indexPathsForVisibleItems")]
-        [Verify(MethodToProperty)]
+        //    [Verify(MethodToProperty)]
         NSIndexPath[] Qmui_indexPathsForVisibleItems { get; }
 
         // -(NSIndexPath *)qmui_indexPathForFirstVisibleCell;
         [Export("qmui_indexPathForFirstVisibleCell")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         NSIndexPath Qmui_indexPathForFirstVisibleCell { get; }
     }
 
@@ -8361,7 +8363,7 @@ namespace QMUI.iOS
 
         // -(UIColor * _Nullable)qmui_colorWithoutAlpha;
         [NullAllowed, Export("qmui_colorWithoutAlpha")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         UIColor Qmui_colorWithoutAlpha { get; }
 
         // -(UIColor * _Nonnull)qmui_colorWithAlpha:(CGFloat)alpha backgroundColor:(UIColor * _Nullable)backgroundColor;
@@ -8382,7 +8384,7 @@ namespace QMUI.iOS
 
         // -(UIColor * _Nonnull)qmui_inverseColor;
         [Export("qmui_inverseColor")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         UIColor Qmui_inverseColor { get; }
 
         // @property (readonly, assign, nonatomic) BOOL qmui_isSystemTintColor;
@@ -8407,7 +8409,7 @@ namespace QMUI.iOS
         // +(UIColor * _Nonnull)qmui_randomColor;
         [Static]
         [Export("qmui_randomColor")]
-        [Verify(MethodToProperty)]
+        //  [Verify(MethodToProperty)]
         UIColor Qmui_randomColor { get; }
     }
 
