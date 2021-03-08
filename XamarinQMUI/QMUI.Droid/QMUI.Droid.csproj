@@ -28,7 +28,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<JavaDocPaths>javadoc</JavaDocPaths>
+    <JavaDocPaths>javadoc</JavaDocPaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>portable</DebugType>
@@ -37,7 +37,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-	<JavaDocPaths>javadoc</JavaDocPaths>
+    <JavaDocPaths>javadoc</JavaDocPaths>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -45,11 +45,230 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.IQMUIAlphaViewInf.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaButton.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaConstraintLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaFrameLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaImageButton.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaLinearLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaRelativeLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaTextView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Alpha.QMUIAlphaViewHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.BetaAttribute.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.BuildConfig.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.IBeta.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Kotlin.DebounceAction.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Kotlin.DimenKtKt.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Kotlin.LayoutParamKtKt.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Kotlin.ViewKtKt.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.IQMUILayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUIButton.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUIConstraintLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUIFrameLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUILayoutHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUILinearLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUIPriorityLinearLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Layout.QMUIRelativeLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Link.ITouchableSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Link.QMUILinkify.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Link.QMUILinkTouchDecorHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Link.QMUILinkTouchMovementMethod.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Link.QMUIScrollingMovementMethod.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.IQMUIContinuousNestedBottomView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.IQMUIContinuousNestedScrollCommon.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.IQMUIContinuousNestedTopView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedBottomAreaBehavior.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedBottomDelegateLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedBottomRecyclerView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedScrollLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedTopAreaBehavior.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedTopDelegateLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedTopLinearLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedTopRecyclerView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIContinuousNestedTopWebView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIDraggableScrollBar.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.NestedScroll.QMUIViewOffsetBehavior.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.QMUIConfig.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.QMUIInterpolatorStaticHolder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.QMUILog.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Qqface.IQMUIQQFaceManager.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Qqface.QMUINoQQFaceManager.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Qqface.QMUIQQFaceCompiler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Qqface.QMUIQQFaceView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Qqface.QQFace.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.RecyclerView.QMUIRVDraggableScrollBar.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.RecyclerView.QMUIRVItemSwipeAction.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.RecyclerView.QMUISwipeAction.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.RecyclerView.QMUISwipeViewHolder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Annotation.IQMUISkinChangeNotAdapted.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Annotation.IQMUISkinListenWithHierarchyChange.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Annotation.QMUISkinChangeNotAdaptedAttribute.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Annotation.QMUISkinListenWithHierarchyChangeAttribute.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.DefaultAttr.IQMUISkinDefaultAttrProvider.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.DefaultAttr.QMUISkinSimpleDefaultAttrProvider.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.IQMUISkinRuleHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleAlphaHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleBackgroundHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleBgTintColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleBorderHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleColorStateListHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleDrawableHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleFloatHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleHintColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleMoreBgColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleMoreTextColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleProgressColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleSeparatorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleSrcHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleTextColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleTextCompoundSrcHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleTextCompoundTintColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleTintColorHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.Handler.QMUISkinRuleUnderlineHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.IQMUISkinApplyListener.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.IQMUISkinDispatchInterceptor.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.IQMUISkinHandlerDecoration.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.IQMUISkinHandlerSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.IQMUISkinHandlerView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.ISkinWriter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.QMUISkinHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.QMUISkinLayoutInflaterFactory.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.QMUISkinManager.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Skin.QMUISkinValueBuilder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.IQMUIOnSpanClickListener.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUIAlignMiddleImageSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUIBlockSpaceSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUICustomTypefaceSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUIMarginImageSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUITextSizeSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Span.QMUITouchableSpan.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.DoNotInterceptKeyboardInsetAttribute.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.IDoNotInterceptKeyboardInset.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.IInterceptNotchInsetDispatch.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.InterceptNotchInsetDispatchAttribute.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIActivityLifecycleCallbacks.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUICollapsingTextHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIColorHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIDeviceHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIDirection.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIDisplayHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIDrawableHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIKeyboardHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUILangHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUINotchHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIPackageHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIReflectHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIResHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUISpanHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIStatusBarHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIToastHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIViewHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIViewOffsetHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIWindowHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Util.QMUIWindowInsetHelper.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBaseDialog.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheet.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetBaseBuilder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetBehavior.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetGridItemModel.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetGridItemView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetGridLineLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetListAdapter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetListItemDecoration.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetListItemModel.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetListItemView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIBottomSheetRootLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialog.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogAction.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogBlockBuilder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogBuilder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogMenuItemView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogRootLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUIDialogView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUITipDialog.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Dialog.QMUITipDialogView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Grouplist.QMUICommonListItemView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Grouplist.QMUIGroupListSectionHeaderFooterView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Grouplist.QMUIGroupListView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.IBlankTouchDetector.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.INotchInsetConsumer.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.IWindowInsetKeyboardConsumer.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.IWindowInsetLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUIBasePopup.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUIFullScreenPopup.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUINormalPopup.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUIPopup.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUIPopups.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Popup.QMUIQuickAction.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUIAlwaysFollowOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUICenterOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUIFixToTargetOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUIPullLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUIPullLoadMoreView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullLayout.QMUIPullRefreshView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullRefreshLayout.QMUICenterGravityRefreshOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullRefreshLayout.QMUIDefaultRefreshOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullRefreshLayout.QMUIFollowRefreshOffsetCalculator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.PullRefreshLayout.QMUIPullRefreshLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIAnimationListView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIAppBarLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUICollapsingTopBarLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIEmptyView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIFloatLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIFontFitTextView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUILoadingView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUINotchConsumeLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIObservableScrollView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIPagerAdapter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIProgressBar.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIRadiusImageView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIRadiusImageView2.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUISeekBar.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUISlider.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUITopBar.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUITopBarLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIVerticalTextView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIViewPager.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIWindowInsetLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIWindowInsetLayout2.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIWrapContentListView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.QMUIWrapContentScrollView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Roundwidget.QMUIRoundButton.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Roundwidget.QMUIRoundButtonDrawable.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Roundwidget.QMUIRoundFrameLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Roundwidget.QMUIRoundLinearLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Roundwidget.QMUIRoundRelativeLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUIDefaultStickySectionAdapter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUISection.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUISectionDiffCallback.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUIStickySectionAdapter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUIStickySectionItemDecoration.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Section.QMUIStickySectionLayout.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUIBasicTabSegment.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITab.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabAdapter.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabBuilder.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabIcon.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabIndicator.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabSegment.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabSegment2.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Tab.QMUITabView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Textview.ISpanTouchFix.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Textview.QMUILinkTextView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Textview.QMUISpanTouchFixTextView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Webview.QMUIBridgeWebViewClient.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Webview.QMUIWebView.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Webview.QMUIWebViewBridgeHandler.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Webview.QMUIWebViewClient.cs" />
+    <Compile Include="Additions\Com.Qmuiteam.Qmui.Widget.Webview.QMUIWebViewContainer.cs" />
+    <Compile Include="Additions\__NamespaceMapping__.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Additions\AboutAdditions.txt" />
     <LibraryProjectZip Include="Jars\qmui-2.0.0-alpha11.aar" />
+    <None Include="Additions\enumlist" />
+    <None Include="Additions\generator.rsp" />
     <None Include="javadoc\package-list" />
   </ItemGroup>
   <ItemGroup>
@@ -472,6 +691,23 @@
     <Content Include="javadoc\overview-tree.html" />
     <Content Include="javadoc\script.js" />
     <Content Include="javadoc\stylesheet.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Annotation">
+      <Version>1.1.0.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat">
+      <Version>1.2.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>1.1.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.SwipeRefreshLayout">
+      <Version>1.1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material">
+      <Version>1.2.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

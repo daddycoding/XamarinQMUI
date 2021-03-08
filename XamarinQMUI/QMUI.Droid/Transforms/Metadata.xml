@@ -6,12 +6,15 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
-	<attr path="/api/package[@name='com.qmuiteam.qmui.span']/class[@name='QMUITouchableSpan']/method[@name='isPressed' and count(parameter)=0]" name="propertyName"/>
+	<!--<attr path="/api/package[@name='com.qmuiteam.qmui.span']/class[@name='QMUITouchableSpan']/method[@name='isPressed' and count(parameter)=0]" name="propertyName"/>
 	<attr path="/api/package[@name='com.qmuiteam.qmui.span']/class[@name='QMUITouchableSpan']/method[@name='setPressed' and count(parameter)=1 and parameter[1][@type='boolean']]"
 	  name="propertyName"/>
-	<!--未被使用的一个java泛型抽象类 同时修改实现类继承于Java Object去 如果后续抽象类被使用则需要更改继承-->
+	--><!--未被使用的一个java泛型抽象类 同时修改实现类继承于Java Object去 如果后续抽象类被使用则需要更改继承--><!--
 	<remove-node path="/api/package[@name='com.qmuiteam.qmui.widget']/class[@name='QMUIItemViewsAdapter']"/>
 	<attr path="/api/package[@name='com.qmuiteam.qmui.widget.tab']/class[@name='QMUITabAdapter']" name="extends">Java.Lang.Object</attr>
-	<!--标记为过期的方法 而且引起了 命名冲突直接干掉即可-->
+	--><!--标记为过期的方法 而且引起了 命名冲突直接干掉即可--><!--
 	<remove-node path="/api/package[@name='com.qmuiteam.qmui.widget.webview']/class[@name='QMUIWebView']/method[@name='setCustomOnScrollChangeListener' and count(parameter)=1 and parameter[1][@type='com.qmuiteam.qmui.widget.webview.QMUIWebView.OnScrollChangeListener']]"/>
+	<remove-node path="/api/package[@name='com.qmuiteam.qmui.layout']/class[@name='QMUIButton']/method[@name='setShadowColor']"/>-->
+
+	<remove-node path="/api"></remove-node>
 </metadata>
